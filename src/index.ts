@@ -10,6 +10,10 @@ export interface IEcrProps {
 }
 
 export class OCCEcrPattern extends Construct {
+  public ecrArn: string
+  public ecrImageName: string
+  public ecr: ecr.IRepository
+
   constructor(scope: Construct, id: string, props: IEcrProps) {
     super(scope, id)
 
@@ -40,6 +44,10 @@ export class OCCEcrPattern extends Construct {
         principals: props.principals,
       })
     )
+
+    this.ecrArn = respository.repositoryArn
+    this.ecrImageName = respository.repositoryName
+    this.ecr = respository
 
     new cdk.CfnOutput(this, 'RepositoryArn', {
       value: respository.repositoryArn,
