@@ -2,15 +2,10 @@ import * as cdk from 'aws-cdk-lib'
 import * as ecr from 'aws-cdk-lib/aws-ecr'
 import * as iam from 'aws-cdk-lib/aws-iam'
 import { Construct } from 'constructs'
-
-export interface EcrProps extends cdk.StackProps {
-  imageName: string
-  scanOnPush: boolean
-  principals: Array<iam.IPrincipal>
-}
+import { IEcrProps } from './interfaces'
 
 export class OCCEcrPattern extends Construct {
-  constructor(scope: Construct, id: string, props: EcrProps) {
+  constructor(scope: Construct, id: string, props: IEcrProps) {
     super(scope, id)
 
     const respository = new ecr.Repository(this, id, {
