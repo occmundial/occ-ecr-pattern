@@ -1,0 +1,99 @@
+{
+  "name": "AWS CDK",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {},
+    "ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {},
+    "ghcr.io/devcontainers/features/common-utils:2.4.3": {
+      "installZsh": "true",
+      "upgradePackages": "false",
+      "uid": "1000",
+      "gid": "1000",
+      "installOhMyZsh": "true",
+      "nonFreePackages": "true"
+    },
+    "ghcr.io/devcontainers/features/docker-from-docker:1": {
+      "version": "latest",
+      "enableNonRootDocker": "true",
+      "moby": "true"
+    },
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/customink/codespaces-features/sam-cli": {}
+  },
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "yarn install",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "daltonmenezes.aura-theme",
+        "amazonwebservices.amazon-q-vscode",
+        "timonwong.shellcheck",
+        "amazonwebservices.aws-toolkit-vscode"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Aura Dark (Soft Text)",
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "javascript.preferences.quoteStyle": "single",
+          "typescript.preferences.quoteStyle": "single",
+          "editor.quickSuggestions": {
+            "strings": true
+          },
+          "editor.formatOnSave": true
+        },
+        "[json]": {
+          "editor.quickSuggestions": {
+            "strings": true
+          },
+          "editor.suggest.insertMode": "replace",
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.guides.indentation": false
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "prettier.jsxSingleQuote": true,
+        "javascript.preferences.quoteStyle": "single",
+        "typescript.preferences.quoteStyle": "single",
+        "javascript.format.semicolons": "remove",
+        "typescript.format.semicolons": "remove",
+        "prettier.singleQuote": true,
+        "prettier.semi": false,
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "github.copilot.enable": {
+          "*": false,
+          "plaintext": false,
+          "markdown": false,
+          "scminput": false
+        }
+      }
+    }
+  },
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}/.gitconfig",
+      "target": "/home/node/.gitconfig",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.ssh",
+      "target": "/home/node/.ssh",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.aws",
+      "target": "/home/node/.aws",
+      "type": "bind"
+    }
+  ]
+}
