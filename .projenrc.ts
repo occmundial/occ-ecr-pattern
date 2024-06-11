@@ -16,12 +16,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
   readme: { filename: 'docs/README.md' },
   copyrightOwner: 'Online Career Center Mexico',
   copyrightPeriod: '2024',
+  licensed: true,
+  license: 'MIT',
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  description:
-    'OCC Pattern to create a ecr based on OCC best practices' /* The description is just a string that helps people understand the purpose of the package. */,
-  // devDeps: [],             /* Build dependencies for this module. */
-  packageName: 'occ-ecr-pattern' /* The "name" in package.json. */,
+  // deps: [],
+  description: 'OCC Pattern to create a ecr based on OCC best practices',
+  // devDeps: [],
+  packageName: '@occmundial/occ-ecr-pattern',
   publishToGo: {
     moduleName: 'github.com/occmundial/occ-ecr-pattern',
   },
