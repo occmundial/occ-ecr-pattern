@@ -3,10 +3,10 @@ import * as ecr from 'aws-cdk-lib/aws-ecr'
 import * as iam from 'aws-cdk-lib/aws-iam'
 import { Construct } from 'constructs'
 
-export interface IEcrProps extends cdk.StackProps {
-  imageName: string
-  scanOnPush: boolean
-  principals: Array<iam.IPrincipal>
+export interface IEcrProps {
+  readonly imageName: string
+  readonly scanOnPush: boolean
+  readonly principals: Array<iam.IPrincipal>
 }
 
 export class OCCEcrPattern extends Construct {
