@@ -17,7 +17,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   copyrightOwner: 'Online Career Center Mexico',
   copyrightPeriod: '2024',
   licensed: true,
-  license: 'MIT',
   // deps: [],
   description: 'OCC Pattern to create a ecr based on OCC best practices',
   // devDeps: [],
