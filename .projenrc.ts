@@ -10,7 +10,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   github: true,
   jsiiVersion: '~5.4.0',
   name: 'occ-ecr-construct',
-  projenrcTs: true,
+
   repositoryUrl: 'https://github.com/occmundial/occ-ecr-pattern.git',
   docgenFilePath: 'docs',
   readme: { filename: 'docs/README.md' },
@@ -18,7 +18,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   copyrightPeriod: '2024',
   licensed: true,
   license: 'MIT',
-
   // deps: [],
   description: 'OCC Pattern to create a ecr based on OCC best practices',
   // devDeps: [],
