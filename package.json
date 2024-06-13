@@ -1,5 +1,5 @@
 {
-  "name": "@occmundial/occ-ecr-pattern",
+  "name": "occ-ecr-pattern",
   "description": "OCC Pattern to create a ecr based on OCC best practices",
   "repository": {
     "type": "git",
@@ -63,6 +63,9 @@
   ],
   "main": "lib/index.js",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.0",
   "jest": {
     "coverageProvider": "v8",

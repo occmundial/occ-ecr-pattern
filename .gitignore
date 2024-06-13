@@ -48,5 +48,5 @@ junit.xml
 /dist/
 .jsii
 tsconfig.json
-!/docs
+!/API.md
 !/.projenrc.ts
