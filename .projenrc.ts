@@ -35,4 +35,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     packageId: 'Occ.EcrPattern',
   },
 })
+project.tasks
+  .tryFind('release')
+  ?.updateStep(4, { exec: 'git diff --ignore-space-at-eol --exit-code | tee' })
 project.synth()

@@ -239,7 +239,7 @@
           "spawn": "unbump"
         },
         {
-          "exec": "git diff --ignore-space-at-eol --exit-code"
+          "exec": "git diff --ignore-space-at-eol --exit-code | tee"
         }
       ]
     },
