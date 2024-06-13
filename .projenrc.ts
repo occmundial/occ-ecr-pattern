@@ -23,9 +23,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'OCC Pattern to create a ecr based on OCC best practices',
   // devDeps: [],
   packageName: '@occmundial/occ-ecr-pattern',
-  publishToGo: {
-    moduleName: 'github.com/occmundial/occ-ecr-pattern',
-  },
+  // publishToGo: {
+  //   moduleName: 'github.com/occmundial/occ-ecr-pattern',
+  // },
   publishToPypi: {
     distName: 'occ.ecr_pattern',
     module: 'occ.ecr_pattern',
@@ -38,4 +38,5 @@ const project = new awscdk.AwsCdkConstructLibrary({
 project.tasks
   .tryFind('release')
   ?.updateStep(4, { exec: 'git diff --ignore-space-at-eol --exit-code | tee' })
+
 project.synth()
