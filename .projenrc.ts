@@ -17,6 +17,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   copyrightPeriod: '2024',
   licensed: true,
   license: 'MIT',
+  npmProvenance: false,
 
   // deps: [],
   description: 'OCC Pattern to create a ecr based on OCC best practices',
