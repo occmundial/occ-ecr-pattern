@@ -32,7 +32,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   publishToNuget: {
     dotNetNamespace: 'Occ.EcrPattern',
-    packageId: 'Occ.EcrPattern',
+    packageId: 'OccEcrPattern',
   },
 })
 project.tasks
