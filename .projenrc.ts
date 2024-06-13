@@ -21,7 +21,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   npmProvenance: false,
   npmAccess: NpmAccess.PUBLIC,
   // deps: [],
-  description: 'OCC Pattern to create a ecr based on OCC best practices',
+  description: 'OCC Pattern to create an AWS ECR based on OCC way',
   // devDeps: [],
   packageName: '@occmundial/occ-ecr-pattern',
   publishToGo: {
