@@ -1,4 +1,4 @@
-// OCC Pattern to create a ecr based on OCC best practices
+// OCC Pattern to create an AWS ECR based on OCC way
 package occmundialoccecrpattern
 
 import (

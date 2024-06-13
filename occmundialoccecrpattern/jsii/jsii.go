@@ -13,7 +13,7 @@ import (
 	constructs "github.com/aws/constructs-go/constructs/v10/jsii"
 )
 
-//go:embed occmundial-occ-ecr-pattern-0.0.0.tgz
+//go:embed occmundial-occ-ecr-pattern-0.0.1.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
@@ -24,5 +24,5 @@ func Initialize() {
 	constructs.Initialize()
 
 	// Load this library into the kernel
-	_jsii_.Load("@occmundial/occ-ecr-pattern", "0.0.0", tarball)
+	_jsii_.Load("@occmundial/occ-ecr-pattern", "0.0.1", tarball)
 }
