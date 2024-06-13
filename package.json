@@ -118,7 +118,7 @@
       },
       "dotnet": {
         "namespace": "Occ.EcrPattern",
-        "packageId": "Occ.EcrPattern"
+        "packageId": "OccEcrPattern"
       },
       "go": {
         "moduleName": "github.com/occmundial/occ-ecr-pattern"
