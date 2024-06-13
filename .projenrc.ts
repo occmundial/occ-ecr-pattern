@@ -23,9 +23,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'OCC Pattern to create a ecr based on OCC best practices',
   // devDeps: [],
   packageName: '@occmundial/occ-ecr-pattern',
-  // publishToGo: {
-  //   moduleName: 'github.com/occmundial/occ-ecr-pattern',
-  // },
+  publishToGo: {
+    moduleName: 'github.com/occmundial/occ-ecr-pattern',
+  },
   publishToPypi: {
     distName: 'occ.ecr_pattern',
     module: 'occ.ecr_pattern',
