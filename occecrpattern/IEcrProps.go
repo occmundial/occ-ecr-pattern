@@ -1,4 +1,4 @@
-package occmundialoccecrpattern
+package occecrpattern
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"

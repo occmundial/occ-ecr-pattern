@@ -1,5 +1,5 @@
 // OCC Pattern to create a ecr based on OCC best practices
-package occmundialoccecrpattern
+package occecrpattern
 
 import (
 	"reflect"
@@ -9,7 +9,7 @@ import (
 
 func init() {
 	_jsii_.RegisterInterface(
-		"@occmundial/occ-ecr-pattern.IEcrProps",
+		"occ-ecr-pattern.IEcrProps",
 		reflect.TypeOf((*IEcrProps)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "imageName", GoGetter: "ImageName"},
@@ -21,7 +21,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@occmundial/occ-ecr-pattern.OCCEcrPattern",
+		"occ-ecr-pattern.OCCEcrPattern",
 		reflect.TypeOf((*OCCEcrPattern)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ecr", GoGetter: "Ecr"},
