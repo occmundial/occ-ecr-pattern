@@ -1,4 +1,5 @@
 import { awscdk } from 'projen'
+import { NpmAccess } from 'projen/lib/javascript'
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Alex Parra',
   authorAddress: 'jparra@occ.com.mx',
@@ -18,11 +19,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   licensed: true,
   license: 'MIT',
   npmProvenance: false,
-
+  npmAccess: NpmAccess.PUBLIC,
   // deps: [],
   description: 'OCC Pattern to create a ecr based on OCC best practices',
   // devDeps: [],
-  packageName: 'occ-ecr-pattern',
+  packageName: '@occmundial/occ-ecr-pattern',
   publishToGo: {
     moduleName: 'github.com/occmundial/occ-ecr-pattern',
   },

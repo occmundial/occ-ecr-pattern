@@ -1,5 +1,5 @@
 {
-  "name": "occ-ecr-pattern",
+  "name": "@occmundial/occ-ecr-pattern",
   "description": "OCC Pattern to create a ecr based on OCC best practices",
   "repository": {
     "type": "git",
