@@ -1,12 +1,12 @@
-package occecrpattern
+package occmundialoccecrpattern
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/occmundial/occ-ecr-pattern/occecrpattern/jsii"
+	_init_ "github.com/occmundial/occ-ecr-pattern/occmundialoccecrpattern/jsii"
 
 	"github.com/aws/aws-cdk-go/awscdk/v2/awsecr"
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/occmundial/occ-ecr-pattern/occecrpattern/internal"
+	"github.com/occmundial/occ-ecr-pattern/occmundialoccecrpattern/internal"
 )
 
 type OCCEcrPattern interface {
@@ -78,7 +78,7 @@ func NewOCCEcrPattern(scope constructs.Construct, id *string, props IEcrProps) O
 	j := jsiiProxy_OCCEcrPattern{}
 
 	_jsii_.Create(
-		"occ-ecr-pattern.OCCEcrPattern",
+		"@occmundial/occ-ecr-pattern.OCCEcrPattern",
 		[]interface{}{scope, id, props},
 		&j,
 	)
@@ -90,7 +90,7 @@ func NewOCCEcrPattern_Override(o OCCEcrPattern, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"occ-ecr-pattern.OCCEcrPattern",
+		"@occmundial/occ-ecr-pattern.OCCEcrPattern",
 		[]interface{}{scope, id, props},
 		o,
 	)
@@ -155,7 +155,7 @@ func OCCEcrPattern_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"occ-ecr-pattern.OCCEcrPattern",
+		"@occmundial/occ-ecr-pattern.OCCEcrPattern",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,

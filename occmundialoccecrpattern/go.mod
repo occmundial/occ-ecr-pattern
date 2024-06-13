@@ -1,4 +1,4 @@
-module github.com/occmundial/occ-ecr-pattern/occecrpattern
+module github.com/occmundial/occ-ecr-pattern/occmundialoccecrpattern
 
 go 1.18
 

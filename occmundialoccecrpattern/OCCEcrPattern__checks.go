@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package occecrpattern
+package occmundialoccecrpattern
 
 import (
 	"fmt"
